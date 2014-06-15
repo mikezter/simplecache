@@ -10,8 +10,8 @@ diff: main.strings null.strings
 		grep -v '^< bufio\.' |\
 		grep -v '^< type\.\.'
 
-
-
+run: all
+	./simplecache
 
 nullserver/nullserver: nullserver/main.go
 	go build -o nullserver/nullserver nullserver/main.go
